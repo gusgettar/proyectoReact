@@ -16,7 +16,7 @@ console.log(numero)
         <section className="container text-center">
             <h2>Practica contador</h2>
             <p>{numero}</p>
-            <button className="btn btn-primary" onClick={sumar}>+1</button>
+            <button className="btn btn-primary" onClick={()=>setNumero(numero+1)}>+1</button>
             <button className="btn btn-danger" onClick={restar}>-1</button>
         
         </section>
