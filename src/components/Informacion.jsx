@@ -1,9 +1,9 @@
 import Teoria from "./Teoria";
 
-const Informacion = (props) => {
+const Informacion = ({comision,anioActual}) => {
   return (
     <article className="mt-4">
-      <h2>Introducción: {props.comision}</h2>
+      <h2>Introducción: {comision}</h2>
       <p>
         es una biblioteca de JavaScript desarrollada por Facebook para construir
         interfaces de usuario. Se destaca por su enfoque en la creación de
@@ -13,7 +13,7 @@ const Informacion = (props) => {
         de forma modular, lo que facilita el desarrollo y el mantenimiento de
         aplicaciones a gran escala.
       </p>
-      <p>Año de actualizacion: {props.anioActual}</p>
+      <p>Año de actualizacion: {anioActual}</p>
       <Teoria></Teoria>
     </article>
   );
